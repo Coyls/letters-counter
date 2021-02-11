@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+textarea, label {
+    width: 50vw;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    textarea, label {
+        height: 50vh;
+        width: 100vw;
+    }
+}
+
